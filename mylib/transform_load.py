@@ -42,8 +42,9 @@ def process_data(payload):
             # Create the table if it doesn't exist
             cursor.execute(
                 """CREATE TABLE IF NOT EXISTS nmc_biopics
-                (title STRING, country STRING, year_release INT, box_office STRING, director STRING, 
-                number_of_subjects INT, subject STRING, type_of_subject STRING, subject_race STRING, 
+                (title STRING, country STRING, year_release INT, 
+                box_office STRING, director STRING, number_of_subjects INT, 
+                subject STRING, type_of_subject STRING, subject_race STRING, 
                 subject_sex STRING, lead_actor_actress STRING);
                 """
             )
