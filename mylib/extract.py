@@ -2,7 +2,7 @@ import requests
 
 
 def extract(
-    data="https://github.com/fivethirtyeight/data/raw/refs/heads/master/biopics/biopics.csv",
+    data="https://github.com/nruta-choudhari/Datasets/raw/refs/heads/main/biopics.csv",
     file_path="data/biopics.csv",
 ):
     with requests.get(data) as r:

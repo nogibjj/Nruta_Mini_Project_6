@@ -1,37 +1,28 @@
-import os
 from mylib.extract import extract
-from mylib.query import query
 from mylib.transform_load import load
+from mylib.query import query
 
 
 def test_extract():
-    try:
-        file_path = extract()
-        assert file_path is not None, "Extracted file path is None"
-        assert os.path.exists(file_path), f"{file_path} does not exist"
-        print("test extract passed.")
-    except Exception as e:
-        print(f"test extract failed: {e}")
+    """Test extract"""
+    test1 = extract()
+    assert test1 is not None
 
 
 def test_load():
-    try:
-        result = load()
-        assert (
-            result == "db loaded or already loaded"
-        ), "Load function did not return expected result"
-    except Exception as e:
-        print(f"test_load failed: {e}")
+    """Test load"""
+    # Ensure the load function is returning the expected message
+    expected_message = "Data loaded into split tables."
+    test2 = load()
+    assert test2 == expected_message
 
 
 def test_query():
-    try:
-        result = query()
-        assert (
-            result == "query successful"
-        ), "Query function did not return expected result"
-    except Exception as e:
-        print(f"test_query failed: {e}")
+    """Test query"""
+    # Ensure the query function returns a success message
+    expected_message = "Query successful."
+    test3 = query()
+    assert test3 == expected_message
 
 
 if __name__ == "__main__":
