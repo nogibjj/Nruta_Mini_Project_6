@@ -1,1 +1,1 @@
-# Nruta_Mini_Project_6
+# IDS 706 Week 6 Mini Project - Complex SQL Query for a MySQL Database
