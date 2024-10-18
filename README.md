@@ -72,10 +72,10 @@ ORDER BY d.title ASC;
 ```
 
 Explanation:
-`SELECT`: Retrieves the title of each biopic, the average release year (year_released), the number of subjects, and the subjects' names.
-`JOIN`: Combines the nmc_biopics_details and nmc_biopics_subjects tables based on the biopic title.
-`GROUP BY`: Groups the results by biopic title, number of subjects, and the subjects themselves to ensure we get accurate averages and associations.
-`ORDER BY`: Sorts the output in ascending order by the biopic title for easier readability.
+- `SELECT`: Retrieves the title of each biopic, the average release year (year_released), the number of subjects, and the subjects' names.
+- `JOIN`: Combines the nmc_biopics_details and nmc_biopics_subjects tables based on the biopic title.
+- `GROUP BY`: Groups the results by biopic title, number of subjects, and the subjects themselves to ensure we get accurate averages and associations.
+- `ORDER BY`: Sorts the output in ascending order by the biopic title for easier readability.
 
 ## 🎯 Expected Output
 After running the SQL query, the output is as follows:
